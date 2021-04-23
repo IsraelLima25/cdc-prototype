@@ -1,0 +1,46 @@
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <img class="img-cabecalho" src="https://pbs.twimg.com/profile_images/1176848283832074246/T14CH1Z0_400x400.jpg"
+    alt="logomarca">
+  <div class="nav-header">
+    <div class="nav-title">
+      <a [routerLink]="['']">Casa do Código</a>
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  <div class="nav-links">
+    <ul>
+      <span *ngFor='let categoria of categorias'>
+        <cdc-item-menu-bar [categoria]="categoria"></cdc-item-menu-bar>
+      </span>
+      <li class="nav-item">
+        <input class="pesquisa-cabecalho" (keyup)="valorPesquisa = $event.target.value" required="true"
+          placeholder="O que procura?" type="text">
+        <button (click)="pesquisarLivros()" class="persquisa-principal-submit"></button>
+      </li>
+      <li class="nav-item">
+        <span *ngIf="quantidadeTotalItensCarrinho !== undefined; else elseBlock"
+          class="badge badge-light quantidade-carrinho">
+          {{ quantidadeTotalItensCarrinho }}
+        </span>
+
+        <ng-template #elseBlock>
+          <span class="badge badge-light quantidade-carrinho">0</span>
+        </ng-template>
+
+        <span class="icon-shop">
+          <a [routerLink]="['carrinho']">
+            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+          </a>
+        </span>
+
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,116 @@
+<form class="panel1" [formGroup]="compraForm" (submit)="enviarDadosCompra()">
+  <img class="img-logo"
+    src="https://cdn.shopify.com/s/files/1/0155/7645/t/242/assets/logo-footer.svg?v=8096540198335410660" alt="logo-cdc">
+  <div class="combo-links mt-3">
+    <a [routerLink]="['../carrinho']">Carrinho</a>
+    <span class="separador">></span>
+    <span>Informações</span>
+    <span class="separador">></span>
+    <a [routerLink]="" (click)="irParaPagamento()">Pagamento</a>
+  </div>
+  <div *ngIf="errosForm.length > 0" class="alert alert-danger mt-4" role="alert">
+    <span *ngFor="let error of errosForm">
+      <strong> Campo {{ error.fieldName }}:</strong>
+      {{ error.message }}
+      <br />
+    </span>
+  </div>
+  <h6 class="mt-4">Informações de contato</h6>
+  <div class="form-group">
+    <input formControlName="email" id="email" class="form-control" placeholder="Email" />
+    <small class="text-danger d-block mt-2" *ngIf="compraForm.get('email').errors?.required"
+      class="text-color d-block mt-2">
+      Insira um e-mail válido
+    </small>
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" checked class="form-check-input">
+    <label class="form-check-label check-font" for="exampleCheck1">Quero receber novidades e ofertas
+      exclusivas</label>
+  </div>
+  <h6>Endereço de faturamento</h6>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <input type="text" class="form-control" formControlName="nome" placeholder="nome (opcional)">
+    </div>
+    <div class="form-group col-md-6">
+      <input type="text" formControlName="sobreNome" class="form-control" placeholder="sobrenome">
+      <small class="text-danger d-block mt-2" *ngIf="compraForm.get('sobreNome').errors?.required"
+        class="text-color d-block mt-2">
+        Insira um sobrenome válido
+      </small>
+    </div>
+  </div>
+  <div class="form-group">
+    <input formControlName="documento" class="form-control" placeholder="CPF/CNPJ" />
+    <small class="text-danger d-block mt-2" *ngIf="compraForm.get('documento').errors?.required"
+      class="text-color d-block mt-2">
+      Insira um documento válido
+    </small>
+  </div>
+  <div class="form-group">
+    <input class="form-control" formControlName="endereco" placeholder="Endereço (com número)" />
+    <small class="text-danger d-block mt-2" *ngIf="compraForm.get('endereco').errors?.required"
+      class="text-color d-block mt-2">
+      Insira um endereço válido
+    </small>
+  </div>
+  <div class="form-group">
+    <input class="form-control" formControlName="complemento" placeholder="Apartamento, bloco etc." />
+    <small class="text-danger d-block mt-2" *ngIf="compraForm.get('complemento').errors?.required"
+      class="text-color d-block mt-2">
+      Insira um complemento válido
+    </small>
+  </div>
+  <div class="form-group">
+    <input class="form-control" formControlName="cidade" placeholder="Cidade" />
+    <small class="text-danger d-block mt-2" *ngIf="compraForm.get('cidade').errors?.required"
+      class="text-color d-block mt-2">
+      Insira um cidade válido
+    </small>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <input type="text" class="form-control" formControlName="pais" placeholder="País/região">
+      <small class="text-danger d-block mt-2" *ngIf="compraForm.get('pais').errors?.required"
+        class="text-color d-block mt-2">
+        Insira um país válido
+      </small>
+    </div>
+    <div class="form-group col-md-4">
+      <input type="text" class="form-control" formControlName="estado" placeholder="Estado">
+      <small class="text-danger d-block mt-2" *ngIf="compraForm.get('estado').errors?.required"
+        class="text-color d-block mt-2">
+        Insira um estado válido
+      </small>
+    </div>
+    <div class="form-group col-md-4">
+      <input type="text" class="form-control" formControlName="cep" placeholder="CEP">
+      <small class="text-danger d-block mt-2" *ngIf="compraForm.get('cep').errors?.required"
+        class="text-color d-block mt-2">
+        Insira um cep válido
+      </small>
+    </div>
+  </div>
+  <div class="form-group">
+    <input class="form-control" formControlName="telefone" placeholder="Telefone" />
+    <small class="text-danger d-block mt-2" *ngIf="compraForm.get('telefone').errors?.required"
+      class="text-color d-block mt-2">
+      Insira um telefone válido
+    </small>
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input">
+    <label class="form-check-label check-font" for="exampleCheck1">Salvar minhas informações para a próxima
+      vez</label>
+  </div>
+  <div class="form-row mb-5">
+    <div class="form-group col-md-6">
+      <button type="submit" [disabled]="compraForm.invalid"
+        class="btn btn-secondary botao-continuar-pagamento">Continuar com o pagamento</button>
+    </div>
+    <div class="form-group col-md-6 mt-3">
+      <a [routerLink]="['../carrinho']"><span class="link-voltar">Voltar ao carrinho</span></a>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,122 @@
+.logo-cdc{
+    width: 81px;
+    height: 104px;
+}
+
+.alinhamento{
+    margin-left: 150px;
+}
+
+.compartilhar-facebook{  
+    background-image: url(//cdn.shopify.com/s/files/1/0155/7645/t/242/assets/facebook.png?v=1373034…);  
+    display: block;
+    max-width: 13em;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    line-height: 2.7;
+    color: #6c6a69;
+    background-size: 31px;
+}
+
+.compartilhar-twitter{  
+    background-image: url(//cdn.shopify.com/s/files/1/0155/7645/t/242/assets/twitter.png?v=1362325…);
+    display: block;
+    max-width: 13em;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    line-height: 2.7;
+    color: #6c6a69;
+    background-size: 31px;
+}
+
+.compartilhar-instagram{  
+    background-image: url(//cdn.shopify.com/s/files/1/0155/7645/t/242/assets/instagram.svg?v=3052132973448681518);  
+    display: block;
+    max-width: 13em;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    line-height: 2.7;
+    color: #6c6a69;
+    background-size: 31px;
+}
+
+.botao-meus-ebooks{
+    background-color: #fac459;
+    color: white;
+    line-height: 1.87;
+    font-weight: 600;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+    transition: opacity .3s;
+}
+
+.titulo{
+    color: #f8965d;
+    font-family: "open-sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.15em;
+    margin-bottom: 1.2em;
+    line-height: 1.18;
+    text-transform: uppercase;
+}
+
+.item-link {
+    display: block;
+    line-height: 2;
+    color: #d5d5d5;
+    text-transform: uppercase;
+    font-size: 14px;    
+}
+
+ul{
+    list-style: none;
+    padding-left: 0px;
+}
+a{
+    text-decoration: none;
+    color: #6c6a69;
+}
+
+::-webkit-input-placeholder {
+    color: #6c6a69;    
+ }
+
+ .rodape-campoDaNewsletter {
+    border: none;
+    background: none;
+    border-radius: 2px;
+    height: 35px;
+    width: 80%;
+    box-sizing: border-box;
+    padding-right: 5em;
+    margin-right: 3px;
+    text-indent: .2em;
+    font-size: 1.2em;
+    color: #6C6A69;
+    font-size: .9em;
+}
+
+.rodape-botaoDaNewsletter {    
+    top: .3em;
+    right: .3em;
+    font-family: "museo", serif;
+    color: #fff;
+    font-size: 1.2em;
+    background-color: #333;
+    border: none;
+    border-radius: 2px;
+    width: 50px;
+    height: 32px;
+    cursor: pointer;
+}

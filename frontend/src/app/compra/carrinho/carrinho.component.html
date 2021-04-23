@@ -1,0 +1,79 @@
+<div class="container mt-5 mb-5">
+	<h2 class="infoSection-titulo">Seu carrinho</h2>
+	<table *ngIf="carrinho?.itens.length > 0; else elseBlock" class="formularioDoCarrinho-tabela">
+		<thead class="formularioDoCarrinho-cabecalho">
+			<tr>
+				<th></th>
+				<th class="formularioDoCarrinho-cabecalho-item">Item</th>
+				<th class="formularioDoCarrinho-cabecalho-item formularioDoCarrinho-cabecalho-preco">Preço</th>
+				<th class="formularioDoCarrinho-cabecalho-item"></th>
+				<th class="formularioDoCarrinho-cabecalho-item">Qtd</th>
+				<th class="formularioDoCarrinho-cabecalho-item"></th>
+				<th class="formularioDoCarrinho-cabecalho-item">Total</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+
+			<tr *ngFor="let item of carrinho?.itens">
+				<td class="formularioDoCarrinho-item">
+					<a href="/products/livro-jogos-scratch">
+						<img width="50" class="formularioDoCarrinho-item-imagem" [src]="item.linkCapa">
+					</a>
+				</td>
+				<td class="formularioDoCarrinho-item">
+					<h2 class="formularioDoCarrinho-item-titulo">{{ item.titulo }}: {{ item.subTitulo }} - {{
+						item.formato }}</h2>
+				</td>
+				<td class="formularioDoCarrinho-item formularioDoCarrinho-item-preco">{{ item.precoUnitario |
+					currency:'BRL':true}}</td>
+				<td class="formularioDoCarrinho-item formularioDoCarrinho-item-preco">
+					<button (click)="incrementarItem(item.isbnLivro,item.quantidade, item.formato)"
+						class="btn btn-dark btn-custom">
+						+
+					</button>
+				</td>
+				<td class="formularioDoCarrinho-item">
+					{{ item.quantidade }}
+				</td>
+				<td class="formularioDoCarrinho-item formularioDoCarrinho-item-preco">
+					<button (click)="decrementarItem(item.isbnLivro,item.quantidade, item.formato)"
+						class="btn btn-dark btn-custom">
+						-
+					</button>
+				</td>
+				<td class="formularioDoCarrinho-item formularioDoCarrinho-item-precoTotal"
+					title="Preço unitário: R$29,90">{{ item.precoTotal | currency:'BRL':true }}</td>
+				<td class="formularioDoCarrinho-item">
+					<a type="button" href="javascript: 0" (click)="removerItem(item.isbnLivro,item.formato)">
+						<img class="formularioDoCarrinho-item-remover-imagem"
+							src="//cdn.shopify.com/s/files/1/0155/7645/t/242/assets/trash.png?v=14717796075839190483"
+							alt="X" title="Remover">
+					</a>
+				</td>
+			</tr>
+
+		</tbody>
+		<tfoot class="formularioDoCarrinho-rodape">
+			<tr>
+				<td class="formularioDoCarrinho-rodape-item formularioDoCarrinho-finalizar">
+					<button (click)="finalizarCompra()" class="formularioDoCarrinho-finalizar-botao">
+						Finalizar Compra
+					</button>
+				</td>
+				<td colspan="5" class="alinhamento-total-footer">Total</td>
+				<td>
+					{{carrinho?.totalCarrinho | currency:'BRL':true}}
+				</td>
+				<td></td>
+			</tr>
+		</tfoot>
+	</table>
+	<ng-template #elseBlock>
+		<span class="msg-carrinho-vazio">
+			Carrinho vazio!
+		</span>
+	</ng-template>
+
+
+</div>

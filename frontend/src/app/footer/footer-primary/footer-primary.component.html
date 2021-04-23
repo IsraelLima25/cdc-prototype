@@ -1,0 +1,16 @@
+<footer>
+  <div class="container-fluid footer-primary">
+    <div class="row">
+      <div class="col-md-2 ml-5">
+        <label class="titulo-footer">Não encontrou o seu livro?</label>
+      </div>
+      <div class="col-md-8">
+        <fieldset class="fieldset-form">
+          <input type="text" required="true" (keyup)="valorPesquisa = $event.target.value" class="buscaRodape"
+            placeholder="Busque por autor, título, conteúdo...">
+          <button (click)="pesquisarLivros()" class="botao-pesquisar ml-2"></button>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</footer>

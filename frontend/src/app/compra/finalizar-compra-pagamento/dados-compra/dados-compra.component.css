@@ -1,0 +1,53 @@
+.img-logo{
+    border: 0;
+    max-width: 100%;
+    width: 60px;
+    height: 60px;
+}
+
+.panel1 {
+    margin-top: 80px;
+}
+
+.combo-links{
+    font-size: 12px;
+}
+
+.separador{
+    padding-left: 8px;
+    font-size: 15px;
+}
+
+.color-title{
+    color: #323232;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.subtitle{
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+    padding-left: 8px;
+}
+
+.botao-continuar-pagamento{
+    cursor: pointer;
+    display: inline-block;
+    background-color: #2a9dcc;
+    background-clip: border-box;
+    box-sizing: border-box;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    padding: 1.1em 1.7em;
+    text-align: center;
+    position: relative;
+}
+
+.link-voltar {
+    color: #2a9dcc;
+}

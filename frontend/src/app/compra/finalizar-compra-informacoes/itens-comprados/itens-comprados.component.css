@@ -1,0 +1,55 @@
+.margem-top{
+    margin-top: 80px;
+}
+.img-livro {
+    width: 60px;
+    height: 70px;
+    position: relative;
+}
+
+.box-itens{
+    line-height: 0.4;
+}
+
+.item-formato {
+    font-size: 10px;
+    color: #717171;
+    text-transform: lowercase;
+}
+
+.item-preco{
+    margin-top: 18px;
+    font-weight: bold;
+    color: #323232;
+}
+
+.botao-cupom{
+    width: 100px;
+    height: 50px;
+}
+
+.botao-cupom:disabled {
+    width: 100px;
+    height: 50px;
+    background-color: #c8c8c8;
+    border-color: #c8c8c8;
+}
+
+.text-cupom{
+    height: 50px;
+}
+
+.total-valor{
+    margin-left: 0;
+    font-size: 20px;
+    color: #323232;
+}
+
+.item-descricao{
+    color: #323232;
+    display: inline;
+}
+
+.text-color{
+    color: green;
+}

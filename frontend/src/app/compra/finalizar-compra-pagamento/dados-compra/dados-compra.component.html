@@ -1,0 +1,70 @@
+<div class="panel1">
+  <img class="img-logo"
+    src="https://cdn.shopify.com/s/files/1/0155/7645/t/242/assets/logo-footer.svg?v=8096540198335410660" alt="logo-cdc">
+  <div class="combo-links mt-3">
+    <a [routerLink]="['../../carrinho']">Carrinho</a>
+    <span class="separador">></span>
+    <a [routerLink]="['../../finalizar-compra-informacao']">Informações</a>
+    <span class="separador">></span>
+    <span>Pagamento</span>
+  </div>
+  <div class="mt-5">
+    <div class="row">
+      <div class="col-md-2">
+        <p class="color-title">Contato</p>
+      </div>
+
+      <div class="col-md-8">
+        <p class="subtitle">{{ dadosCompra?.email }}</p>
+      </div>
+
+      <div class="col-md-2">
+        <a [routerLink]="['../../finalizar-compra-informacao']" class="subtitle">Alterar</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <p class="color-title">Faturamento</p>
+      </div>
+
+      <div class="col-md-8">
+        <p class="subtitle">{{ dadosCompra?.endereco?.enderecoLogradouro }}, {{ dadosCompra?.endereco?.cidade }},
+          {{ dadosCompra?.endereco?.estado }}, {{ dadosCompra?.endereco?.cep }}, {{ dadosCompra?.endereco?.pais }}
+        </p>
+      </div>
+
+      <!-- logradouro+bairro+cidade+estado+cep+pais -->
+
+      <div class="col-md-2">
+        <a [routerLink]="['../../finalizar-compra-informacao']" class="subtitle">Alterar</a>
+      </div>
+    </div>
+    <h6 class="mt-5">Pagamento</h6>
+    <p class="color-title mt-3">Todas as transações são seguras e criptografadas.</p>
+    <div class="form-check">
+      <input class="form-check-input" (click)="adicionarPagamento('PAGSEGURO')" type="radio" name="exampleRadios"
+        id="exampleRadios1" value="PAGSEGURO" checked>
+      <label class="form-check-label" for="exampleRadios1">
+        PagSeguro
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" (click)="adicionarPagamento('PAYPAL')" type="radio" name="exampleRadios"
+        id="exampleRadios2" value="PAYPAL">
+      <label class="form-check-label" for="exampleRadios2">
+        PayPal
+      </label>
+    </div>
+
+    <div class="form-row mb-5 mt-5">
+      <div class="form-group col-md-6">
+        <button (click)="fazerPagamento()" class="btn btn-secondary botao-continuar-pagamento"> Finalizar a
+          compra</button>
+      </div>
+      <div class="form-group col-md-6 mt-3">
+        <a [routerLink]="['../../finalizar-compra-informacao']"><span class="link-voltar">Voltar para as
+            informações</span></a>
+      </div>
+    </div>
+  </div>
+</div>

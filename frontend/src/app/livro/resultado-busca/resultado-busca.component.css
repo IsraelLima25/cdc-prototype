@@ -1,0 +1,71 @@
+.infoSection-titulo {
+    font-family: "open-sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    width: 100%;
+    border-bottom: 2px solid rgba(108, 105, 105, 0.3);
+    padding-bottom: .35em;
+    margin-bottom: .6em;
+    color: #6c6a69;
+}
+
+.busca-termos {
+    font-weight: 400;
+    color: #f8965d;
+}
+
+.busca-comentario {
+    margin-bottom: 1em;
+    color: #6c6a69;
+    font-family: "open-sans", sans-serif;
+    font-weight: 600;
+}
+
+ul{
+    list-style: none; 
+    padding: 0;
+          
+}
+
+.busca-item {
+    padding: .5em;
+    margin-bottom: .5em;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,.03);
+}
+
+
+a {
+    
+    color: #f8965d;
+    font-family: "museo", serif;
+    text-decoration: underline;
+    
+}
+
+.busca-item-imagem {
+    display: inline-block;
+    vertical-align: middle;
+    width: 64px;
+    margin-right: 6px;
+}
+
+.busca-item-titulo {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: calc(100% - 70px);
+    color: #6c6a69;
+    font-family: "open-sans", sans-serif;
+    font-weight: 700;
+    font-size: .9em;
+    line-height: 1.35;
+}
+
+.busca-item-descricao {
+    margin-top: .5em;
+    color: #6c6a69;
+    font-family: "museo", serif;
+    font-weight: 200;
+    font-size: .95em;
+    line-height: 1.5;
+}

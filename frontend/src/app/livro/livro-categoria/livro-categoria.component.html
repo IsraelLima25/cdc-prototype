@@ -1,0 +1,13 @@
+<header class="cabecalho-colecao">  
+  <img src="//cdn.shopify.com/s/files/1/0155/7645/t/242/assets/icon-programacao-branco.svg?v=14602170873650870516" alt="" class="cabecalhoDaColecao-icone">
+  <h1 class="cabecalhoDaColecao-titulo" itemprop="name">Livros de {{descricaoCategoriaMae}}</h1>  
+</header>
+<div class="container">
+  <div class="text-center mt-4" *ngIf= "(livrosCategoria | json)?.length === 2">
+      <span class="vitrineDaColecao-titulo">Nenhum livro cadastrado para esta categoria.</span>
+  </div>
+  <div *ngFor="let categoria of livrosCategoria | keyvalue">    
+    <h2 class="vitrineDaColecao-titulo mb-4">Livros de {{descricaoCategoriaMae}} <span class="color-categoria">/ {{categoria.key}}</span></h2>
+    <cdc-list-livro [livros]="categoria.value"></cdc-list-livro> 
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+      <div class="col-md-6">
+        <cdc-form-comprador (emitirDadosCompraForm)="dadosCompraFormEmitido($event)" [dadosCompra]="dadosCompra"></cdc-form-comprador>
+      </div>
+      <div class="col-md-6">
+        <cdc-itens-comprados (descontoAplicado) = "descontoAplicadoEmitido($event)" [dadosCompra]="dadosCompra"></cdc-itens-comprados>
+      </div>
+    </div>
+  </div>

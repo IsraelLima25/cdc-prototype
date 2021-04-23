@@ -1,0 +1,35 @@
+<div class="margem-top">
+  <div *ngFor="let item of carrinho?.itens" class="media box-itens mt-5">
+    <img [src]="item.linkCapa" class="mr-3 img-livro " alt="capa-livro">
+    <div class="media-body">
+      <p class="item-quantidade">{{ item.quantidade }}</p>
+      <p class="item-descricao"> {{ item.titulo }} </p>
+      <p class="item-preco">{{ item.precoTotal | currency:'BRL':true }}</p>
+      <span class="item-formato">{{ item.formato }}</span>
+    </div>
+  </div>
+  <form [formGroup]="itensCompraForm">
+    <div class="form-row form-cupom mt-5">
+      <div class="form-group col-md-8 mt-3">
+        <input formControlName="cupom" [hidden] = "decontoAplicado()" id="cupom" type="text" (keyup)="onKey($event.target.value)"
+          class="form-control text-cupom" placeholder="Cartão presente ou código de desconto">
+        <small class="text-danger d-block mt-2" *ngIf="decontoAplicado()" class="text-color d-block mt-2">
+          Um cupom de desconto já foi associado a esta compra! No valor de {{ dadosCompra?.cupom.desconto | currency:'BRL':true }}
+        </small>
+      </div>
+      <div class="form-group col-md-4 mt-3">
+        <button [hidden] = "decontoAplicado()" [disabled]="botaoCupomDisabled" (click)="aplicarDesconto()"
+          class="btn btn-info botao-cupom">Aplicar</button>
+      </div>
+    </div>
+  </form>
+
+  <div class="row mt-4">
+    <div class="col-md-6 ml-1 mt-2 total-label">
+      Total
+    </div>
+    <div class="col-md-2 total-valor">    
+      {{ dadosCompra?.totalCompra | currency:'BRL':true }}
+    </div>
+  </div>
+</div>

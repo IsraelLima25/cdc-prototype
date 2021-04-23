@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 text-center mt-5">
+      <img class="imagemLivroNinja-principal" [src]="livroBusca?.linkCapa" alt="img-livro">
+    </div>
+    <div class="col-md-6 mt-5">
+      <h1 class="titulo-principal">{{ livroBusca?.titulo }}</h1>
+      <h3 class="cabecalhoProdutoLivro-titulo-sub">{{ livroBusca?.subTitulo }}</h3>
+      <h4 class="cabecalhoProdutoLivro-nomeAutor">{{ livroBusca?.autor?.nome }}</h4>
+      <!-- Este trecho não está mais suportando o fato de ainda não ter se tornado um component -->
+      <!-- Por favor se puder ajude ele daqui ** -->
+      <ul class="adicionarAoCarrinho-listaOfertas mt-5">
+        <li *ngFor="let tipo of livroBusca?.tipos " class="adicionarAoCarrinho-oferta">
+          <div class="row">
+            <div class="col-md-4">
+              <span class="adicionarAoCarrinho-tipoDaOferta-nome">{{tipo.formato}}</span>
+            </div>
+            <div class="col-md-4">
+              <span class="adicionarAoCarrinho-preco-valor">{{tipo.preco | currency:'BRL':true }}</span>
+            </div>
+            <div class="col-md-4">
+              <button (click)="enviarItemCarrinho(tipo.formato)"
+                class="adicionarAoCarrinho-botaoComprar">Comprar</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- ** Até Aqui -->
+      <!-- Fazer ajuste nos precos que compõe a tela para está de acordo com a página original -->
+      <!-- <p class="infoSection-texto">*Você terá acesso às futuras atualizações do livro.</p>         -->
+    </div>
+
+  </div>
+  <div>
+    <h1 class="mt-5 infoSection-titulo">Conteúdo</h1>
+    <p class="infoSection-texto">{{ livroBusca?.conteudo }}</p>
+  </div>
+  <div>
+    <h1 class="mt-3 infoSection-titulo">Sumário</h1>
+    <p class="infoSection-texto">{{ livroBusca?.sumarioMarkDown }}</p>
+  </div>
+
+  <div>
+    <h1 class="infoSection-titulo">Autor</h1>
+    <p class="autoresDoLivro-autor-nome">{{ livroBusca?.autor.nome }}</p>
+    <p class="infoSection-texto-bio-autor">{{ livroBusca?.autor.biografia }}</p>
+  </div>
+
+  <div>
+    <h1 class="infoSection-titulo">Dados do Produto</h1>
+    <p class="titulo-dado-produto">Número de páginas:
+      <span class="valor-dado-produto">{{ livroBusca?.numeroPaginas }}</span>
+    </p>
+    <p class="titulo-dado-produto">ISBN:
+      <span class="valor-dado-produto">{{ livroBusca?.isbn }}</span>
+    </p>
+  </div>
+</div>

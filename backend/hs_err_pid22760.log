@@ -1,0 +1,21 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f101ab70375, pid=22760, tid=22776
+#
+# JRE version: OpenJDK Runtime Environment (15.0.1+9) (build 15.0.1+9-18)
+# Java VM: OpenJDK 64-Bit Server VM (15.0.1+9-18, mixed mode, tiered, compressed oops, g1 gc, linux-amd64)
+# Problematic frame:
+# C  [libjimage.so+0x4375]  ImageStrings::find(Endian*, char const*, int*, unsigned int)+0x65
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/lib/systemd/systemd-coredump %P %u %g %s %t 9223372036854775808 %h" (or dumping to /home/israel/Documentos/workspaces/ws-sts/cdc/core.22760)
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -XX:+ShowCodeDetailsInExceptionMessages -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:35189 -Dmaven.home=EMBEDDED -Dclassworlds.conf=/home/israel/Documentos/workspaces/ws-sts/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf16424579279101093833.tmp -Dmaven.multiModuleProjectDirectory=/home/israel/Documentos/workspaces/ws-sts/cdc -Djansi.force=true -javaagent:/home/israel/Documentos/sts-4.9.0.RELEASE/configuration/org.eclipse.osgi/247/0/.cp/lib/javaagent-shaded.jar -Dfile.encoding=UTF-8 org.codehaus.plexus.classworlds.launcher.Launcher -B package -Dstyle.color=always
+
+Host: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, 4 cores, 7G, 

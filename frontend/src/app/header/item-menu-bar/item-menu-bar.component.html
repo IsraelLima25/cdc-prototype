@@ -1,0 +1,12 @@
+<li class="nav-item dropdown">
+  <a [routerLink]="['livro-por-categoria', categoria.categoriaMae.id, categoria.categoriaMae.descricao]"
+    class="nav-link dropdown-toggle link-mae" href="#" id="navbarDropdownMenuLink">
+    {{categoria.categoriaMae.descricao}}
+  </a>
+  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+    <span *ngFor="let categoriaFilho of categoria.categoriasFilho">
+      <a [routerLink]="['livro-por-categoria', categoriaFilho.id, categoria.categoriaMae.descricao]"
+        class="dropdown-item color-item link-filho">{{categoriaFilho.descricao}}</a>
+    </span>
+  </div>
+</li>

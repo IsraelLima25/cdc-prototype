@@ -1,0 +1,122 @@
+.infoSection-titulo {
+    font-family: "open-sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    width: 100%;
+    border-bottom: 2px solid rgba(108, 105, 105, 0.3);
+    padding-bottom: .35em;
+    margin-bottom: .6em;
+    color: #6c6a69;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.formularioDoCarrinho-tabela {
+    background-color: #F2F0EE;
+    text-align: center;
+    width: 100%;
+}
+
+.formularioDoCarrinho-cabecalho {
+    background-color: #E4E1DE;
+    border-bottom: 1px solid #D5D3D1;
+    padding-bottom: .35em;
+    margin-bottom: .6em;
+    font-family: "open-sans", sans-serif;
+    font-size: .9em;
+    font-weight: 700;
+}
+
+.formularioDoCarrinho-cabecalho-item {
+    padding: .5em 0;
+}
+
+.formularioDoCarrinho-item {
+    font-size: .8em;
+    font-family: "museo", serif;
+    padding: .2em;
+    vertical-align: middle;
+}
+
+.formularioDoCarrinho-rodape {
+    background-color: #E4E1DE;
+    border-top: 1px solid #D5D3D1;
+    font-family: "open-sans", sans-serif;
+    font-size: .9em;
+    font-weight: 700;
+}
+
+.formularioDoCarrinho-rodape-item {
+    padding: .5em 0;
+    vertical-align: middle;
+}
+
+.formularioDoCarrinho-finalizar {
+    text-align: left;
+    padding-left: .5em;
+}
+
+.formularioDoCarrinho-rodape-item {
+    padding: .5em 0;
+    vertical-align: middle;
+}
+
+.formularioDoCarrinho-finalizar-botao {
+    font-family: "open-sans", sans-serif;
+    font-size: 1em;
+    font-weight: 800;
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 9px 0 2px;
+    border-radius: 2px;
+    display: block;
+    background-color: #fac459;
+    border: none;
+    cursor: pointer;
+}
+
+.formularioDoCarrinho-item {
+    font-size: 16px;
+    font-family: "museo", serif;
+    padding: .2em;
+    vertical-align: middle;
+}
+
+.formularioDoCarrinho-item-titulo{
+    font-size: .9em;
+    font-family: "museo", serif;
+    padding: .2em;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.formularioDoCarrinho-item-remover-imagem {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.btn-custom {
+	border-radius: 150px;
+    font-size: 12px;
+    font-weight: bold;	
+}
+
+.alinhamento-total-footer {
+    text-align: right;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.msg-carrinho-vazio {
+    margin-top: 40px;
+    color: #6c6a69;
+    letter-spacing: -0.9px;
+    font-family: "open-sans", sans-serif;
+    font-size: 1.375em;
+}

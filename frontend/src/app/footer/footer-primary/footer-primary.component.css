@@ -1,0 +1,72 @@
+footer{
+    margin-top: 40px;
+}
+
+.footer-primary{
+    width: 100%;
+    background-color: #333;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.titulo-footer{
+    text-align: left;
+    font-size: 1.0625em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-left: 30px;
+    font-weight: bold;
+    
+}
+
+::-webkit-input-placeholder {
+    color: #d3d3d3;
+    font-weight: bolder;
+ }
+
+.buscaRodape{
+    font-weight: 300;
+    -webkit-appearance: none;
+    border: none;
+    height: 50px;
+    width: calc(100% - 60px);
+    font-size: 1.3em;
+    display: inline-block;
+    background: none;
+    vertical-align: middle;
+    color: #6c6a69; 
+    font-family: "open-sans", sans-serif;      
+}
+
+.botao-pesquisar{
+    display: inline-block;
+    font-family: "museo", serif;
+    background-image: url(//cdn.shopify.com/s/files/1/0155/7645/t/242/assets/search.svg?v=913832301337037298);
+    line-height: 0;
+    color: transparent;
+    background-color: #f8965d;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+    border: none;
+    border-radius: 4px;
+    width: 50px;
+    max-width: 77px;
+    height: 50px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.fieldset-form{
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #fff;
+    border-radius: 4px;
+    line-height: 0;
+    text-align: justify;
+    padding: 7px 12px;
+   
+    
+}

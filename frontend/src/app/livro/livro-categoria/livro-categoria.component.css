@@ -1,0 +1,46 @@
+.cabecalho-colecao {
+    width: 100%;
+    font-family: "open-sans", sans-serif;
+    position: relative;
+    height: 10em;
+    background-position: center top;
+    background-color: #484848;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%234f4f4f' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.cabecalhoDaColecao-icone {
+    padding-left: calc(50% - 600px);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 43px;
+}
+
+.cabecalhoDaColecao-titulo {
+    position: absolute;
+    padding-left: 5%;
+    top: .64em;
+    font-size: 1.5em;
+    line-height: 5.3em;
+    font-weight: bold;
+    text-align: right;
+    min-width: 300px;
+    max-width: 90%;
+    padding-right: 1em;
+    box-sizing: border-box;
+    color: #ffffff;
+    letter-spacing: -0.9px;
+}
+
+.vitrineDaColecao-titulo {
+    margin-top: 40px;
+    color: #6c6a69;
+    letter-spacing: -0.9px;
+    font-family: "open-sans", sans-serif;
+    font-size: 1.375em;
+}
+
+.color-categoria{
+    color: #0fd395;
+}

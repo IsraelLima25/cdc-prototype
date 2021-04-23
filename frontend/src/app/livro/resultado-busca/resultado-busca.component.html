@@ -1,0 +1,18 @@
+<div class="container">
+  <h1 class="mt-5 infoSection-titulo">Buscando "<span class="busca-termos">{{ valorBusca }}</span>"</h1>
+
+  <div *ngIf="pageLivroDetalhado?.content.length > 0; else elseBlock">
+    <p class="busca-comentario">{{ pageLivroDetalhado?.totalElements }} produto(s) encontrado(s)</p>
+    <ul>
+      <li *ngFor="let livro of pageLivroDetalhado?.content" class="mt-2">
+        <a [routerLink]="['/detalhe-livro', livro.isbn]">
+          <img class="busca-item-imagem" [src]="livro.linkCapa" [title]="livro.titulo">
+          <h2 class="busca-item-titulo">{{livro.titulo}}</h2>
+        </a>
+        <p class="busca-item-descricao">{{ livro.conteudo | slice:0:130 }}... <a href=""
+            class="busca-item-descricao-chamada">ver mais</a></p>
+      </li>
+    </ul>
+  </div>
+  <ng-template class="busca-item-titulo" #elseBlock>Nenhum livro encontrado para este filtro</ng-template>
+</div>

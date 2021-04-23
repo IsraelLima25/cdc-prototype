@@ -1,0 +1,10 @@
+.titulo{
+    text-align: left;
+    font-weight: 700;
+    font-size: 1.75em;
+    border-bottom: 2px solid rgba(248,150,93,0.3);
+    padding-bottom: 15px;
+    margin-bottom: 1em;
+    letter-spacing: -0.4px;
+    color: #f8965d; 
+}

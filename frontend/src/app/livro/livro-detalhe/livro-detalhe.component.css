@@ -1,0 +1,137 @@
+.imagemLivroNinja-principal {
+    width: 58.6%;
+    position: relative;
+    
+}
+
+.titulo-principal {
+    font-weight: 700;
+    font-size: 2.15em;
+    line-height: 1;
+    display: block;
+}
+
+.cabecalhoProdutoLivro-titulo-sub {
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 1.2;
+    margin-top: .35em;
+    display: inline-block;
+}
+
+.cabecalhoProdutoLivro-nomeAutor {
+    font-size: 1em;
+    font-weight: 600;
+    color: #6c6a69;    
+}
+
+.adicionarAoCarrinho-listaOfertas {
+    padding: 0 5%;
+    background-color: #f2f0ee;
+}
+
+.adicionarAoCarrinho-oferta {
+    padding: 1em 0;
+    font-size: .8em;
+    text-align: justify;
+    line-height: 0;
+}
+
+.adicionarAoCarrinho-tipoDaOferta-nome {
+    font-size: 16px;
+    display: block;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #6c6a69;    
+}
+
+.adicionarAoCarrinho-preco-valor {
+    font-size: 16px;
+    color: #6c6a69;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+.adicionarAoCarrinho-botaoComprar {
+    background-color: #fac459;
+    color: #fbfaf8;
+    text-transform: uppercase;
+    border: none;
+    font-size: .75em;
+    font-weight: 600;
+    line-height: 1;
+    padding: 1em 1.7em;
+    border-radius: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;    
+}
+
+.infoSection-texto {
+    font-family: "museo", serif;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #6c6a69;
+    font-weight: 300;
+    margin-top: 1em;
+}
+
+.infoSection-texto-bio-autor {
+    font-family: "museo", serif;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #6c6a69;
+    font-weight: 300;
+}
+
+ul{
+    list-style: none;
+}
+
+.infoSection-titulo {
+    font-family: "open-sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    width: 100%;
+    border-bottom: 2px solid rgba(108, 105, 105, 0.3);
+    padding-bottom: .35em;
+    margin-bottom: .6em;
+    color: #6c6a69;
+}
+
+.infoSection-texto {
+    font-family: "museo", serif;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #6c6a69;
+    font-weight: 300;
+    margin-top: 1em;
+}
+
+.autoresDoLivro-autor-nome {
+    font-family: "museo", serif;
+    max-width: calc(100% - 80px - .5em);   
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.2;
+    display: inline-block;
+    vertical-align: middle;
+    color: #6c6a69;
+}
+
+.titulo-dado-produto{
+    font-family: "museo", serif;  
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;    
+    color: #6c6a69;
+}
+
+.valor-dado-produto{
+    font-family: "museo", serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #6c6a69;
+    font-weight: 300;
+}
+
